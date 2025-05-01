@@ -1,24 +1,31 @@
-header {
-  background-image: url('images/movie1.jpg'), url('images/movie2.jpg'), url('images/movie3.jpg'), url('images/movie4.jpg'), url('images/movie5.jpg');
-  background-size: cover;
-  background-position: top left, top center, top right, bottom left, bottom right;
-  background-repeat: no-repeat;
-  height: 400px;
-  color: white;
-  text-align: center;
+.gallery-grid {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
   justify-content: center;
-  align-items: center;
-  background-attachment: fixed; /* Rögzíti a háttérképet görgetésnél */
 }
 
-header h1 {
-  font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+/* Képek stílusa */
+.gallery-grid img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
-header p {
-  font-size: 1.2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+/* Hover-effekt */
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+.image-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.image-row img {
+  max-width: 30%;
+  height: auto;
+  margin: 10px;
 }
