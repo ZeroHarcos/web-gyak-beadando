@@ -20,12 +20,15 @@
 }
 .image-row {
   display: flex;
-  justify-content: space-around;
+  gap: 16px;
+  justify-content: center;
   flex-wrap: wrap;
+  margin: 20px 0;
 }
 
 .image-row img {
-  max-width: 30%;
+  width: 300px;
   height: auto;
-  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
