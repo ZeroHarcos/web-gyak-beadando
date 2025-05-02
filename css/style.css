@@ -8,7 +8,7 @@
 /* Képek stílusa */
 .gallery-grid img {
   width: 200px;
-  height: auto;
+  height: 300px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
@@ -31,4 +31,84 @@
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+body {
+  background-color: #1b1b1b;
+  color: #f5f5f5;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ffa500;
+}
+
+.gallery-grid a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+.gallery-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+}
+
+.gallery-title {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #f0f0f0;
+  font-weight: 500;
+}
+html, body {
+  background-color: #121212;
+  color: #f5f5f5;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fejléc stílus */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #1e1e1e;
+  border-bottom: 2px solid #ffb400;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #ffb400;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+/* Galéria */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.gallery-grid img {
+  width: 200px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffb400;
 }
