@@ -5,7 +5,7 @@
   justify-content: center;
 }
 
-/* Képek stílusa */
+
 .gallery-grid img {
   width: 200px;
   height: 300px;
@@ -14,7 +14,7 @@
   transition: transform 0.3s ease;
 }
 
-/* Hover-effekt */
+
 .gallery-grid img:hover {
   transform: scale(1.05);
 }
@@ -74,7 +74,7 @@ html, body {
   padding: 0;
 }
 
-/* Fejléc stílus */
+
 header {
   text-align: center;
   padding: 2rem 1rem;
@@ -92,7 +92,7 @@ header p {
   color: #e0e0e0;
 }
 
-/* Galéria */
+
 .gallery-grid {
   display: flex;
   flex-wrap: wrap;
@@ -117,12 +117,12 @@ main > img:first-of-type {
   margin: 0 auto 2rem auto;
 }
 
-/* 2. és 3. kép - középen, egyforma méretben, arányos, max szövegterület szélesség */
+
 .img-original {
   display: block;
   margin: 0 auto 2rem auto;
   max-width: 100%;
-  width: 960px; /* illeszkedik a container szövegtartományához */
+  width: 960px; 
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(255, 180, 0, 0.2);

@@ -25,7 +25,11 @@
     </div>
   </nav>
   <main class="container my-5">
+ 
     <h2>Filmlista</h2>
+    <div class="mb-3">
+      <input type="text" id="searchInput" class="form-control" placeholder="Keresés filmcímre...">
+    </div>
     <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead class="table-dark">
@@ -74,5 +78,19 @@
       </table>
     </div>
   </main>
+  <script>
+    document.getElementById('searchInput').addEventListener('keyup', function () {
+      const filter = this.value.toLowerCase();
+      const rows = document.querySelectorAll('table tbody tr');
+  
+      rows.forEach(row => {
+        const titleCell = row.querySelector('td');
+        if (titleCell) {
+          const text = titleCell.textContent.toLowerCase();
+          row.style.display = text.includes(filter) ? '' : 'none';
+        }
+      });
+    });
+  </script>
 </body>
 </html>
